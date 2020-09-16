@@ -18,7 +18,7 @@ import java.util.Optional;
 public class UserController {
     private UserService userService;
 
-    @PostMapping("/signIn")
+    @PostMapping("/sign-in")
     public User signIn(Principal principal) {
         return userService.saveUser(principal);
     }
