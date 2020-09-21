@@ -21,16 +21,16 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public List<Car> getCars() {
-        return null;
+        return repository.findAll();
     }
 
     @Override
     public Car saveCar(Car car) {
-        return null;
+        return repository.save(car);
     }
 
     @Override
     public void deleteCar(Car car) {
-
+        repository.delete(car);
     }
 }

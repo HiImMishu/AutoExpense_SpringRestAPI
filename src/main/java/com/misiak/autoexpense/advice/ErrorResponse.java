@@ -8,7 +8,7 @@ import java.sql.Timestamp;
 
 @AllArgsConstructor
 @Getter
-public class UserErrorResponse {
+public class ErrorResponse {
     private String message;
     private int status;
     private Timestamp timestamp;
