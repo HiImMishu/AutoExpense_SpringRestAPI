@@ -23,8 +23,4 @@ public class Engine {
     private double horsepower;
 
     private int cylinders;
-
-    @OneToOne
-    @JoinColumn(name = "engine_id")
-    private Car car;
 }

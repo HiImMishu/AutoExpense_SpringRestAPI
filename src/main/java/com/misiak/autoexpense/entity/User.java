@@ -1,12 +1,12 @@
 package com.misiak.autoexpense.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -14,6 +14,14 @@ import java.sql.Timestamp;
 @Setter
 @Entity
 public class User {
+
+    public User(String id, String email, String firstName, String lastName, Timestamp signedAt) {
+        this.id = id;
+        this.email = email;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.signedAt = signedAt;
+    }
 
     @Id
     private String id;
@@ -28,4 +36,9 @@ public class User {
 
     @Column(name = "signed_at")
     private Timestamp signedAt;
+
+    @OneToMany(mappedBy = "user")
+    @JsonIgnoreProperties("user")
+    private List<Car> cars;
+
 }

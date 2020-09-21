@@ -24,9 +24,8 @@ public class FuelExpense {
 
     private double litres;
 
-    private double mileage;
+    private double milage;
 
     @ManyToOne
-    @Column(name = "car_id")
     private Car car;
 }

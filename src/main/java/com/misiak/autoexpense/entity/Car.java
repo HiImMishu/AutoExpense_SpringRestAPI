@@ -1,5 +1,7 @@
 package com.misiak.autoexpense.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -32,14 +34,14 @@ public class Car {
     private BigDecimal basePrice;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @Column(name = "engine_id")
     private Engine engine;
 
     @ManyToOne
-    @Column(name = "user_id")
+    @JoinColumn(name = "user_id")
+    @JsonIgnoreProperties("cars")
+    @JsonIgnore
     private User user;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "car_id")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "car")
     private List<FuelExpense> fuelExpenses;
 }
