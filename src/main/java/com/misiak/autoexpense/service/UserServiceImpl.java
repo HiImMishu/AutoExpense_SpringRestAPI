@@ -1,6 +1,7 @@
 package com.misiak.autoexpense.service;
 
 import com.misiak.autoexpense.entity.User;
+import com.misiak.autoexpense.exception.UserNotFoundException;
 import com.misiak.autoexpense.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
@@ -13,7 +14,7 @@ import java.util.Optional;
 
 @Service
 @AllArgsConstructor
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 
     private UserRepository repository;
 
@@ -27,8 +28,13 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public Optional<User> getUser(String id) {
-        return repository.findById(id);
+    public User getUser(String id) {
+        Optional<User> optionalUser = repository.findById(id);
+
+        if (optionalUser.isPresent())
+            return optionalUser.get();
+        else
+            throw new UserNotFoundException(id);
     }
 
     private User getUserFromToken(Principal principal) {

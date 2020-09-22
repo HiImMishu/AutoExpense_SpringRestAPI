@@ -2,6 +2,7 @@ package com.misiak.autoexpense.controllertests;
 
 import com.misiak.autoexpense.controller.UserController;
 import com.misiak.autoexpense.entity.User;
+import com.misiak.autoexpense.exception.UserNotFoundException;
 import com.misiak.autoexpense.service.UserService;
 import org.junit.Assert;
 import org.junit.Test;
@@ -43,7 +44,7 @@ public class UserControllerTest {
     @Test
     @WithMockUser
     public void shouldGetUserWithIdFromAuthentiaction() throws Exception {
-        when(userService.getUser("user")).thenReturn(java.util.Optional.of(new User("id", "email", "firstName", "lastName", new Timestamp(System.currentTimeMillis()))));
+        when(userService.getUser("user")).thenReturn(new User("id", "email", "firstName", "lastName", new Timestamp(System.currentTimeMillis())));
 
         mockMvc.perform(MockMvcRequestBuilders.get("/users").contentType("application/json"))
                 .andExpect(status().isOk())
@@ -56,12 +57,11 @@ public class UserControllerTest {
     @Test
     @WithMockUser
     public void shouldGet404WhenUserNotSignedUp() throws Exception {
-        when(userService.getUser("user")).thenReturn(java.util.Optional.empty());
 
         mockMvc.perform(MockMvcRequestBuilders.get("/users").contentType("application/json"))
                 .andExpect(status().isNotFound())
                 .andExpect(content().contentType("application/json"))
-                .andExpect(content().string(containsString("ser not found with id: ")));
+                .andExpect(content().string(containsString("User not found with id: ")));
 
         verify(userService).getUser("user");
     }

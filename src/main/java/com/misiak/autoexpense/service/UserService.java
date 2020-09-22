@@ -8,5 +8,5 @@ import java.util.Optional;
 public interface UserService {
     public User saveUser(Principal principal);
 
-    public Optional<User> getUser(String id);
+    public User getUser(String id);
 }
