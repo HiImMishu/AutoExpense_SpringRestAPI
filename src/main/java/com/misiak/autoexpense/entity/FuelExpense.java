@@ -1,5 +1,6 @@
 package com.misiak.autoexpense.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -7,6 +8,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.sql.Timestamp;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -27,5 +29,9 @@ public class FuelExpense {
     private double milage;
 
     @ManyToOne
+    @JsonIgnore
     private Car car;
+
+    @Column(name = "expense_date")
+    private Timestamp expenseDate;
 }
