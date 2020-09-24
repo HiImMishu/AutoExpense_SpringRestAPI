@@ -28,6 +28,12 @@ public class FuelExpense {
 
     private double milage;
 
+    @Column(name = "average_cost")
+    private BigDecimal averageCost;
+
+    @Column(name = "average_consumption")
+    private BigDecimal averageConsumption;
+
     @ManyToOne
     @JsonIgnore
     private Car car;

@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db8ba0a1-b321-49ce-a37b-0bb12dd372f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/misiak/autoexpense/advice/FuelExpenseExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/misiak/autoexpense/controller/FuelExpenseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/misiak/autoexpense/exception/FuelExpenseNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/misiak/autoexpense/service/FuelExpenseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/misiak/autoexpense/service/FuelExpenseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/misiak/autoexpense/controllertests/CarControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/misiak/autoexpense/entity/FuelExpense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/misiak/autoexpense/entity/FuelExpense.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/misiak/autoexpense/repository/FuelExpenseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/misiak/autoexpense/repository/FuelExpenseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/misiak/autoexpense/service/FuelExpenseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/misiak/autoexpense/service/FuelExpenseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/misiak/autoexpense/controllertests/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/misiak/autoexpense/controllertests/UserControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +92,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserControllerTest.shouldGetExceptionWhenUserNotInDb" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring Rest Api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.misiak.autoexpense.controllertests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.misiak.autoexpense.controllertests" />
+      <option name="MAIN_CLASS_NAME" value="com.misiak.autoexpense.controllertests.UserControllerTest" />
+      <option name="METHOD_NAME" value="shouldGetExceptionWhenUserNotInDb" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserControllerTest.shouldGetUserWithIdFromAuthentiaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Spring Rest Api" />
       <extension name="coverage">
@@ -127,22 +140,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTest.shouldNotGetUserWithoutAuthentication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring Rest Api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.misiak.autoexpense.controllertests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.misiak.autoexpense.controllertests" />
-      <option name="MAIN_CLASS_NAME" value="com.misiak.autoexpense.controllertests.UserControllerTest" />
-      <option name="METHOD_NAME" value="shouldNotGetUserWithoutAuthentication" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AutoexpenseapiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Spring Rest Api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.misiak.autoexpense.AutoexpenseapiApplication" />
@@ -152,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserControllerTest.shouldGet404WhenUserNotSignedUp" />
         <item itemvalue="JUnit.UserControllerTest" />
-        <item itemvalue="JUnit.UserControllerTest.shouldNotGetUserWhenUnauthorized" />
+        <item itemvalue="JUnit.UserControllerTest.shouldGetExceptionWhenUserNotInDb" />
         <item itemvalue="JUnit.UserControllerTest.shouldGetUserWithIdFromAuthentiaction" />
-        <item itemvalue="JUnit.UserControllerTest.shouldNotGetUserWithoutAuthentication" />
+        <item itemvalue="JUnit.UserControllerTest.shouldGet404WhenUserNotSignedUp" />
+        <item itemvalue="JUnit.UserControllerTest.shouldNotGetUserWhenUnauthorized" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +168,8 @@
       <option name="presentableId" value="Default" />
       <updated>1600102141756</updated>
       <workItem from="1600102145043" duration="51419000" />
-      <workItem from="1600799869516" duration="9627000" />
+      <workItem from="1600799869516" duration="18467000" />
+      <workItem from="1600952786933" duration="4793000" />
     </task>
     <servers />
   </component>
@@ -203,54 +201,70 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="524" y="115" key="#xdebugger.evaluate/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600772506654" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1600937610336">
+    <state width="1493" height="261" key="GridCell.Tab.-1.bottom" timestamp="1600953050685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600937610336" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1600937610335">
+    <state width="1493" height="261" key="GridCell.Tab.-1.bottom/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600953050685" />
+    <state width="1493" height="261" key="GridCell.Tab.-1.center" timestamp="1600953050685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600937610335" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1600937610335">
+    <state width="1493" height="261" key="GridCell.Tab.-1.center/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600953050685" />
+    <state width="1493" height="261" key="GridCell.Tab.-1.left" timestamp="1600953050685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600937610335" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1600937610336">
+    <state width="1493" height="261" key="GridCell.Tab.-1.left/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600953050685" />
+    <state width="1493" height="261" key="GridCell.Tab.-1.right" timestamp="1600953050685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600937610336" />
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1600937610336">
+    <state width="1493" height="261" key="GridCell.Tab.-1.right/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600953050685" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1600965096320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600937610336" />
-    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1600937610336">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096320" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1600965096320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600937610336" />
-    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1600937610336">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096320" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1600965096320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600937610336" />
-    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1600937610336">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096320" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1600965096320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600937610336" />
-    <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1600799690716">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096320" />
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1600965096321">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600799690716" />
-    <state width="1493" height="261" key="GridCell.Tab.2.center" timestamp="1600799690716">
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096321" />
+    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1600965096321">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600799690716" />
-    <state width="1493" height="261" key="GridCell.Tab.2.left" timestamp="1600799690716">
+    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096321" />
+    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1600965096321">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600799690716" />
-    <state width="1493" height="261" key="GridCell.Tab.2.right" timestamp="1600799690716">
+    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096321" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1600965096321">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600799690716" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096321" />
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1600954779292">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600954779292" />
+    <state width="1493" height="261" key="GridCell.Tab.2.center" timestamp="1600954779292">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600954779292" />
+    <state width="1493" height="261" key="GridCell.Tab.2.left" timestamp="1600954779292">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600954779292" />
+    <state width="1493" height="261" key="GridCell.Tab.2.right" timestamp="1600954779292">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600954779292" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1600281606633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -259,10 +273,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600104769037" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1600799871636">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1600952792472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600799871636" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600952792472" />
     <state x="540" y="131" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1600191645849">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
