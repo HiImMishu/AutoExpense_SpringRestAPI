@@ -2,14 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db8ba0a1-b321-49ce-a37b-0bb12dd372f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/misiak/autoexpense/controllertests/CarControllerWithMockServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/misiak/autoexpense/advice/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/misiak/autoexpense/advice/ErrorResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/misiak/autoexpense/controllertests/CarControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/misiak/autoexpense/controllertests/CarControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,8 +71,8 @@
       <recent name="com.misiak.autoexpense.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CarControllerWithMockServiceTest">
-    <configuration name="CarControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.com.misiak.autoexpense.controllertests in Spring Rest Api">
+    <configuration name="CarControllerTest.shouldGet404WhenCarToDeleteDoesntExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Spring Rest Api" />
       <extension name="coverage">
         <pattern>
@@ -68,28 +82,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.misiak.autoexpense.controllertests" />
       <option name="MAIN_CLASS_NAME" value="com.misiak.autoexpense.controllertests.CarControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarControllerTest.shouldGet404WhenUserHasNoCars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring Rest Api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.misiak.autoexpense.controllertests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.misiak.autoexpense.controllertests" />
-      <option name="MAIN_CLASS_NAME" value="com.misiak.autoexpense.controllertests.CarControllerTest" />
-      <option name="METHOD_NAME" value="shouldGet404WhenUserHasNoCars" />
+      <option name="METHOD_NAME" value="shouldGet404WhenCarToDeleteDoesntExist" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarControllerTest.shouldGetListOfUserCars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarControllerTest.shouldGet404WhenCarToUpdateDoesntExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Spring Rest Api" />
       <extension name="coverage">
         <pattern>
@@ -99,13 +98,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.misiak.autoexpense.controllertests" />
       <option name="MAIN_CLASS_NAME" value="com.misiak.autoexpense.controllertests.CarControllerTest" />
-      <option name="METHOD_NAME" value="shouldGetListOfUserCars" />
+      <option name="METHOD_NAME" value="shouldGet404WhenCarToUpdateDoesntExist" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarControllerTest.shouldGetSavedCarWithActualCarId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarControllerTest.shouldGetUpdatedCarAsUpdateResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Spring Rest Api" />
       <extension name="coverage">
         <pattern>
@@ -115,13 +114,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.misiak.autoexpense.controllertests" />
       <option name="MAIN_CLASS_NAME" value="com.misiak.autoexpense.controllertests.CarControllerTest" />
-      <option name="METHOD_NAME" value="shouldGetSavedCarWithActualCarId" />
+      <option name="METHOD_NAME" value="shouldGetUpdatedCarAsUpdateResponse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarControllerWithMockServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="com.misiak.autoexpense.controllertests in Spring Rest Api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Spring Rest Api" />
       <extension name="coverage">
         <pattern>
@@ -130,11 +129,35 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.misiak.autoexpense.controllertests" />
-      <option name="MAIN_CLASS_NAME" value="com.misiak.autoexpense.controllertests.CarControllerWithMockServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="autoexpenseapi [test]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="test" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="AutoexpenseapiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Spring Rest Api" />
@@ -145,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CarControllerWithMockServiceTest" />
-        <item itemvalue="JUnit.CarControllerTest" />
-        <item itemvalue="JUnit.CarControllerTest.shouldGetSavedCarWithActualCarId" />
-        <item itemvalue="JUnit.CarControllerTest.shouldGetListOfUserCars" />
-        <item itemvalue="JUnit.CarControllerTest.shouldGet404WhenUserHasNoCars" />
+        <item itemvalue="JUnit.com.misiak.autoexpense.controllertests in Spring Rest Api" />
+        <item itemvalue="Maven.autoexpenseapi [test]" />
+        <item itemvalue="JUnit.CarControllerTest.shouldGet404WhenCarToDeleteDoesntExist" />
+        <item itemvalue="JUnit.CarControllerTest.shouldGet404WhenCarToUpdateDoesntExist" />
+        <item itemvalue="JUnit.CarControllerTest.shouldGetUpdatedCarAsUpdateResponse" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +188,7 @@
       <updated>1600102141756</updated>
       <workItem from="1600102145043" duration="51419000" />
       <workItem from="1600799869516" duration="18467000" />
-      <workItem from="1600952786933" duration="13725000" />
+      <workItem from="1600952786933" duration="18076000" />
     </task>
     <servers />
   </component>
@@ -214,26 +237,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.-1.right/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600953050685" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1601469729889">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1601544204459">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096320" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601469729889" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1601469729889">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601544204459" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1601544204458">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096320" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601469729889" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1601469729889">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601544204458" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1601544204457">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096320" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601469729889" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1601469729889">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601544204457" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1601544204459">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096320" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601469729889" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601544204459" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1601466617299">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
