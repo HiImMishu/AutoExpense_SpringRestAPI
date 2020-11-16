@@ -66,7 +66,7 @@ public class FuelExpenseServiceImpl implements FuelExpenseService {
     }
 
     private void calculateAvgConsumption(FuelExpense fuelExpense, Car car) {
-        double milage = getRecentMilage(fuelExpense);
+        double milage = getRecentMileage(fuelExpense);
         BigDecimal avgConsumption;
 
         if (recentMileageHigherThanPrevious(fuelExpense)) {
@@ -79,7 +79,7 @@ public class FuelExpenseServiceImpl implements FuelExpenseService {
     }
 
     private boolean recentMileageHigherThanPrevious(FuelExpense fuelExpense) {
-        double milage = getRecentMilage(fuelExpense);
+        double milage = getRecentMileage(fuelExpense);
 
         return fuelExpense.getMilage() > milage;
     }
@@ -90,17 +90,29 @@ public class FuelExpenseServiceImpl implements FuelExpenseService {
         fuelExpense.setAverageCost(avgConst);
     }
 
-    private double getRecentMilage(FuelExpense fuelExpense) {
-        Pageable pageable = PageRequest.of(0, 1);
+    //TODO("Refactor needed")
+    private double getRecentMileage(FuelExpense fuelExpense) {
+        Pageable pageable = PageRequest.of(0, 2);
         Slice<FuelExpense> latestFuelExpense = repository.findRecentFuelExpenseForCar(fuelExpense.getCar().getId(), pageable);
 
-        double milage;
-        if (latestFuelExpense.getSize() == 1)
-            milage = latestFuelExpense.getContent().get(0).getMilage();
+        double mileage;
+        if (latestFuelExpense.getContent().size() != 0) {
+            FuelExpense expense = latestFuelExpense.getContent().get(0);
+            if (expensesAreTheSame(fuelExpense, expense) && latestFuelExpense.getContent().size() > 1)
+                mileage = latestFuelExpense.getContent().get(1).getMilage();
+            else if (!expensesAreTheSame(fuelExpense, expense))
+                mileage = latestFuelExpense.getContent().get(0).getMilage();
+            else
+                mileage = fuelExpense.getCar().getMileage();
+        }
         else
-            milage = fuelExpense.getCar().getMileage();
+            mileage = fuelExpense.getCar().getMileage();
 
-        return milage;
+        return mileage;
+    }
+
+    private boolean expensesAreTheSame(FuelExpense fuelExpense1, FuelExpense fuelExpense2) {
+        return fuelExpense1.getId() == fuelExpense2.getId();
     }
 
     @Override
