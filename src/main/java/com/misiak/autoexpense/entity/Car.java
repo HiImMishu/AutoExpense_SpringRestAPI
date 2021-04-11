@@ -30,6 +30,9 @@ public class Car {
 
     private double mileage;
 
+    @Column(name = "photo_url")
+    private String photoUrl;
+
     @Column(name = "base_price")
     private BigDecimal basePrice;
 

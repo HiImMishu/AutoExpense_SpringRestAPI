@@ -69,7 +69,7 @@ public class CarControllerTest {
     @Test
     @WithMockUser
     public void shouldGetCarWhenUserHasCarWithGivenId() throws Exception {
-        when(repository.findById(1)).thenReturn(Optional.of(new Car(1, "BMW", "Series 5", 2016, 26322.83, new BigDecimal("243564.54"), null, null, null)));
+        when(repository.findById(1)).thenReturn(Optional.of(new Car(1, "BMW", "Series 5", 2016, 26322.83, null, new BigDecimal("243564.54"), null, null, null)));
 
         mockMvc.perform(MockMvcRequestBuilders.get("/cars/1"))
                 .andExpect(status().isOk())
@@ -96,8 +96,8 @@ public class CarControllerTest {
     @WithMockUser
     public void shouldGetListOfUserCars() throws Exception {
         List<Car> cars = new ArrayList<>();
-        cars.add(new Car(1, "BMW", "Series 5", 2016, 26322.83, new BigDecimal("243564.54"), null, null, null));
-        cars.add(new Car(2, "Audi", "A5", 2016, 26322.83, new BigDecimal("243564.54"), null, null, null));
+        cars.add(new Car(1, "BMW", "Series 5", 2016, 26322.83, null,  new BigDecimal("243564.54"), null, null, null));
+        cars.add(new Car(2, "Audi", "A5", 2016, 26322.83, null, new BigDecimal("243564.54"), null, null, null));
 
 
         when(repository.findAll()).thenReturn(cars);
@@ -114,7 +114,7 @@ public class CarControllerTest {
     @Test
     @WithMockUser
     public void shouldGetUpdatedCarAsUpdateResponse() throws Exception {
-        Car car = new Car(3, "BMW", "5 Series", 2016, 46390, new BigDecimal("195000.00"), null, null, null);
+        Car car = new Car(3, "BMW", "5 Series", 2016, 46390, null,  new BigDecimal("195000.00"), null, null, null);
 
         when(repository.findById(3)).thenReturn(Optional.of(car));
         when(repository.save(ArgumentMatchers.any(Car.class))).thenReturn(car);
@@ -126,7 +126,7 @@ public class CarControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.id", Matchers.is(3)))
-                .andExpect(jsonPath("$.*", Matchers.hasSize(8)));
+                .andExpect(jsonPath("$.*", Matchers.hasSize(9)));
 
         verify(repository).findById(3);
     }
@@ -134,7 +134,7 @@ public class CarControllerTest {
     @Test
     @WithMockUser
     public void shouldGet404WhenCarToUpdateDoesntExist() throws Exception {
-        Car car = new Car(3, "BMW", "5 Series", 2016, 46390, new BigDecimal("195000.00"), null, null, null);
+        Car car = new Car(3, "BMW", "5 Series", 2016, 46390, null,  new BigDecimal("195000.00"), null, null, null);
 
         when(repository.findById(3)).thenReturn(Optional.empty());
         mockMvc.perform(MockMvcRequestBuilders.put("/cars")

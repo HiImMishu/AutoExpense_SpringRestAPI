@@ -41,7 +41,7 @@ public class CarControllerWithMockServiceTest {
     @Test
     @WithMockUser
     public void shouldGetSavedCarWithActualCarId() throws Exception {
-        Car car = new Car(3, "BMW", "5 Series", 2016, 46390, new BigDecimal("195000.00"), null, null, null);
+        Car car = new Car(3, "BMW", "5 Series", 2016, 46390, null,  new BigDecimal("195000.00"), null, null, null);
 
         when(mockCarService.saveCar(ArgumentMatchers.any(Car.class))).thenReturn(car);
 
@@ -51,7 +51,7 @@ public class CarControllerWithMockServiceTest {
                 .content(objectMapper.writeValueAsString(car)))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id", Matchers.is(3)))
-                .andExpect(jsonPath("$.*", Matchers.hasSize(8)));
+                .andExpect(jsonPath("$.*", Matchers.hasSize(9)));
 
         verify(mockCarService).saveCar(ArgumentMatchers.any(Car.class));
     }

@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db8ba0a1-b321-49ce-a37b-0bb12dd372f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_oauth_spring_security_oauth2_2_5_0_RELEASE.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-DOCKER.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring Rest Api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring Rest Api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/misiak/autoexpense/entity/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/misiak/autoexpense/entity/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/misiak/autoexpense/config/ResourceServerTestConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/misiak/autoexpense/config/ResourceServerTestConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/misiak/autoexpense/controllertests/CarControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/misiak/autoexpense/controllertests/CarControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/misiak/autoexpense/controllertests/CarControllerWithMockServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/misiak/autoexpense/controllertests/CarControllerWithMockServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/autoexpenseapi-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/autoexpenseapi-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Spring Rest Api.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.misiak.autoexpense.AutoexpenseapiApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.misiak.autoexpense.AutoexpenseapiApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.misiak.autoexpense.AutoexpenseapiApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.misiak.autoexpense.AutoexpenseapiApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/Spring Rest Api.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,19 +71,33 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\KURSY\Projekt\Spring Rest Api" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\KURSY\Projekt\Spring Rest Api\docker" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.misiak.autoexpense.exception" />
       <recent name="com.misiak.autoexpense.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AutoexpenseapiApplication">
+  <component name="RunManager" selected="JUnit.All in Spring Rest Api">
+    <configuration name="All in Spring Rest Api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring Rest Api" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CarControllerTest.shouldGet404WhenCarToDeleteDoesntExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Spring Rest Api" />
       <extension name="coverage">
@@ -88,38 +109,6 @@
       <option name="PACKAGE_NAME" value="com.misiak.autoexpense.controllertests" />
       <option name="MAIN_CLASS_NAME" value="com.misiak.autoexpense.controllertests.CarControllerTest" />
       <option name="METHOD_NAME" value="shouldGet404WhenCarToDeleteDoesntExist" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarControllerTest.shouldGet404WhenCarToUpdateDoesntExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring Rest Api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.misiak.autoexpense.controllertests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.misiak.autoexpense.controllertests" />
-      <option name="MAIN_CLASS_NAME" value="com.misiak.autoexpense.controllertests.CarControllerTest" />
-      <option name="METHOD_NAME" value="shouldGet404WhenCarToUpdateDoesntExist" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarControllerTest.shouldGetUpdatedCarAsUpdateResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring Rest Api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.misiak.autoexpense.controllertests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.misiak.autoexpense.controllertests" />
-      <option name="MAIN_CLASS_NAME" value="com.misiak.autoexpense.controllertests.CarControllerTest" />
-      <option name="METHOD_NAME" value="shouldGetUpdatedCarAsUpdateResponse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,6 +153,14 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="mvnw" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/mvnw" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="AutoexpenseapiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Spring Rest Api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.misiak.autoexpense.AutoexpenseapiApplication" />
@@ -173,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in Spring Rest Api" />
+        <item itemvalue="Shell Script.mvnw" />
         <item itemvalue="JUnit.com.misiak.autoexpense.controllertests in Spring Rest Api" />
         <item itemvalue="Maven.autoexpenseapi [test]" />
         <item itemvalue="JUnit.CarControllerTest.shouldGet404WhenCarToDeleteDoesntExist" />
-        <item itemvalue="JUnit.CarControllerTest.shouldGet404WhenCarToUpdateDoesntExist" />
-        <item itemvalue="JUnit.CarControllerTest.shouldGetUpdatedCarAsUpdateResponse" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +197,8 @@
       <workItem from="1605539527053" duration="71000" />
       <workItem from="1605540945491" duration="1284000" />
       <workItem from="1606124856090" duration="3827000" />
+      <workItem from="1606996691813" duration="219000" />
+      <workItem from="1617814213962" duration="15898000" />
     </task>
     <servers />
   </component>
@@ -207,164 +206,82 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="71" key="#Inspections" timestamp="1600697977786">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2469" y="53" key="CommitChangelistDialog2" timestamp="1618158178577">
+      <screen x="1920" y="-61" width="1920" height="1040" />
     </state>
-    <state x="361" y="71" key="#Inspections/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600697977786" />
-    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1600283168250">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2469" y="53" key="CommitChangelistDialog2/0.0.1536.824/1920.-61.1920.1040@1920.-61.1920.1040" timestamp="1618158178577" />
+    <state x="2012" y="31" width="1736" height="856" key="DiffContextDialog" timestamp="1618158132809">
+      <screen x="1920" y="-61" width="1920" height="1040" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600283168250" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1600880996951">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2012" y="31" width="1736" height="856" key="DiffContextDialog/0.0.1536.824/1920.-61.1920.1040@1920.-61.1920.1040" timestamp="1618158132809" />
+    <state width="1877" height="391" key="GridCell.Tab.0.bottom" timestamp="1618154871375">
+      <screen x="1920" y="-61" width="1920" height="1040" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600880996951" />
-    <state x="404" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1600102198407">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="300" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.-61.1920.1040@0.0.1536.824" timestamp="1618149454088" />
+    <state width="1877" height="391" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.-61.1920.1040@1920.-61.1920.1040" timestamp="1618154871375" />
+    <state width="1877" height="391" key="GridCell.Tab.0.center" timestamp="1618154871375">
+      <screen x="1920" y="-61" width="1920" height="1040" />
     </state>
-    <state x="404" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600102198407" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600200297603">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="300" key="GridCell.Tab.0.center/0.0.1536.824/1920.-61.1920.1040@0.0.1536.824" timestamp="1618149454088" />
+    <state width="1877" height="391" key="GridCell.Tab.0.center/0.0.1536.824/1920.-61.1920.1040@1920.-61.1920.1040" timestamp="1618154871375" />
+    <state width="1877" height="391" key="GridCell.Tab.0.left" timestamp="1618154871375">
+      <screen x="1920" y="-61" width="1920" height="1040" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600200297603" />
-    <state x="-1188" y="337" key="#xdebugger.evaluate" timestamp="1605535009498">
-      <screen x="-1920" y="12" width="1920" height="1040" />
+    <state width="1493" height="300" key="GridCell.Tab.0.left/0.0.1536.824/1920.-61.1920.1040@0.0.1536.824" timestamp="1618149454088" />
+    <state width="1877" height="391" key="GridCell.Tab.0.left/0.0.1536.824/1920.-61.1920.1040@1920.-61.1920.1040" timestamp="1618154871375" />
+    <state width="1877" height="391" key="GridCell.Tab.0.right" timestamp="1618154871375">
+      <screen x="1920" y="-61" width="1920" height="1040" />
     </state>
-    <state x="-1188" y="337" key="#xdebugger.evaluate/0.0.1536.824/-1920.12.1920.1040@-1920.12.1920.1040" timestamp="1605535009498" />
-    <state x="524" y="115" key="#xdebugger.evaluate/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600772506654" />
-    <state x="524" y="115" key="#xdebugger.evaluate/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601466612753" />
-    <state x="549" y="131" key="FileChooserDialogImpl" timestamp="1601551294447">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="300" key="GridCell.Tab.0.right/0.0.1536.824/1920.-61.1920.1040@0.0.1536.824" timestamp="1618149454088" />
+    <state width="1877" height="391" key="GridCell.Tab.0.right/0.0.1536.824/1920.-61.1920.1040@1920.-61.1920.1040" timestamp="1618154871375" />
+    <state width="1877" height="300" key="GridCell.Tab.1.bottom" timestamp="1618154084231">
+      <screen x="1920" y="-61" width="1920" height="1040" />
     </state>
-    <state x="549" y="131" key="FileChooserDialogImpl/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601551294447" />
-    <state width="1493" height="261" key="GridCell.Tab.-1.bottom" timestamp="1600953050685">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="300" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.-61.1920.1040@0.0.1536.824" timestamp="1618149453593" />
+    <state width="1877" height="300" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.-61.1920.1040@1920.-61.1920.1040" timestamp="1618154084231" />
+    <state width="1877" height="300" key="GridCell.Tab.1.center" timestamp="1618154084230">
+      <screen x="1920" y="-61" width="1920" height="1040" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.-1.bottom/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600953050685" />
-    <state width="1493" height="261" key="GridCell.Tab.-1.center" timestamp="1600953050685">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="300" key="GridCell.Tab.1.center/0.0.1536.824/1920.-61.1920.1040@0.0.1536.824" timestamp="1618149453592" />
+    <state width="1877" height="300" key="GridCell.Tab.1.center/0.0.1536.824/1920.-61.1920.1040@1920.-61.1920.1040" timestamp="1618154084230" />
+    <state width="1877" height="300" key="GridCell.Tab.1.left" timestamp="1618154084230">
+      <screen x="1920" y="-61" width="1920" height="1040" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.-1.center/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600953050685" />
-    <state width="1493" height="261" key="GridCell.Tab.-1.left" timestamp="1600953050685">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="300" key="GridCell.Tab.1.left/0.0.1536.824/1920.-61.1920.1040@0.0.1536.824" timestamp="1618149453592" />
+    <state width="1877" height="300" key="GridCell.Tab.1.left/0.0.1536.824/1920.-61.1920.1040@1920.-61.1920.1040" timestamp="1618154084230" />
+    <state width="1877" height="300" key="GridCell.Tab.1.right" timestamp="1618154084230">
+      <screen x="1920" y="-61" width="1920" height="1040" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.-1.left/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600953050685" />
-    <state width="1493" height="261" key="GridCell.Tab.-1.right" timestamp="1600953050685">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="300" key="GridCell.Tab.1.right/0.0.1536.824/1920.-61.1920.1040@0.0.1536.824" timestamp="1618149453592" />
+    <state width="1877" height="300" key="GridCell.Tab.1.right/0.0.1536.824/1920.-61.1920.1040@1920.-61.1920.1040" timestamp="1618154084230" />
+    <state width="1877" height="300" key="GridCell.Tab.2.bottom" timestamp="1618154084231">
+      <screen x="1920" y="-61" width="1920" height="1040" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.-1.right/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600953050685" />
-    <state width="1493" height="388" key="GridCell.Tab.0.bottom" timestamp="1606145654860">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="300" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.-61.1920.1040@0.0.1536.824" timestamp="1618149453593" />
+    <state width="1877" height="300" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.-61.1920.1040@1920.-61.1920.1040" timestamp="1618154084231" />
+    <state width="1877" height="300" key="GridCell.Tab.2.center" timestamp="1618154084231">
+      <screen x="1920" y="-61" width="1920" height="1040" />
     </state>
-    <state width="1510" height="258" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.12.1920.1040@-1920.12.1920.1040" timestamp="1605542236647" />
-    <state width="1493" height="388" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.12.1920.1040@0.0.1536.824" timestamp="1606145654860" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096320" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601551297846" />
-    <state width="1493" height="388" key="GridCell.Tab.0.center" timestamp="1606145654858">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="300" key="GridCell.Tab.2.center/0.0.1536.824/1920.-61.1920.1040@0.0.1536.824" timestamp="1618149453593" />
+    <state width="1877" height="300" key="GridCell.Tab.2.center/0.0.1536.824/1920.-61.1920.1040@1920.-61.1920.1040" timestamp="1618154084231" />
+    <state width="1877" height="300" key="GridCell.Tab.2.left" timestamp="1618154084231">
+      <screen x="1920" y="-61" width="1920" height="1040" />
     </state>
-    <state width="1510" height="258" key="GridCell.Tab.0.center/0.0.1536.824/-1920.12.1920.1040@-1920.12.1920.1040" timestamp="1605542236646" />
-    <state width="1493" height="388" key="GridCell.Tab.0.center/0.0.1536.824/-1920.12.1920.1040@0.0.1536.824" timestamp="1606145654858" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096320" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601551297846" />
-    <state width="1493" height="388" key="GridCell.Tab.0.left" timestamp="1606145654857">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="300" key="GridCell.Tab.2.left/0.0.1536.824/1920.-61.1920.1040@0.0.1536.824" timestamp="1618149453593" />
+    <state width="1877" height="300" key="GridCell.Tab.2.left/0.0.1536.824/1920.-61.1920.1040@1920.-61.1920.1040" timestamp="1618154084231" />
+    <state width="1877" height="300" key="GridCell.Tab.2.right" timestamp="1618154084231">
+      <screen x="1920" y="-61" width="1920" height="1040" />
     </state>
-    <state width="1510" height="258" key="GridCell.Tab.0.left/0.0.1536.824/-1920.12.1920.1040@-1920.12.1920.1040" timestamp="1605542236645" />
-    <state width="1493" height="388" key="GridCell.Tab.0.left/0.0.1536.824/-1920.12.1920.1040@0.0.1536.824" timestamp="1606145654857" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096320" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601551297846" />
-    <state width="1493" height="388" key="GridCell.Tab.0.right" timestamp="1606145654859">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="300" key="GridCell.Tab.2.right/0.0.1536.824/1920.-61.1920.1040@0.0.1536.824" timestamp="1618149453593" />
+    <state width="1877" height="300" key="GridCell.Tab.2.right/0.0.1536.824/1920.-61.1920.1040@1920.-61.1920.1040" timestamp="1618154084231" />
+    <state x="2012" y="31" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1618158132809">
+      <screen x="1920" y="-61" width="1920" height="1040" />
     </state>
-    <state width="1510" height="258" key="GridCell.Tab.0.right/0.0.1536.824/-1920.12.1920.1040@-1920.12.1920.1040" timestamp="1605542236646" />
-    <state width="1493" height="388" key="GridCell.Tab.0.right/0.0.1536.824/-1920.12.1920.1040@0.0.1536.824" timestamp="1606145654859" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096320" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601551297846" />
-    <state width="1493" height="388" key="GridCell.Tab.1.bottom" timestamp="1606145654861">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2012" y="31" width="1736" height="856" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1536.824/1920.-61.1920.1040@1920.-61.1920.1040" timestamp="1618158132809" />
+    <state x="2575" y="57" width="609" height="804" key="find.popup" timestamp="1618157424413">
+      <screen x="1920" y="-61" width="1920" height="1040" />
     </state>
-    <state width="1314" height="319" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.12.1920.1040@-1920.12.1920.1040" timestamp="1605535613490" />
-    <state width="1493" height="388" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.12.1920.1040@0.0.1536.824" timestamp="1606145654861" />
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096321" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601551297841" />
-    <state width="1493" height="388" key="GridCell.Tab.1.center" timestamp="1606145654861">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1314" height="319" key="GridCell.Tab.1.center/0.0.1536.824/-1920.12.1920.1040@-1920.12.1920.1040" timestamp="1605535613489" />
-    <state width="1493" height="388" key="GridCell.Tab.1.center/0.0.1536.824/-1920.12.1920.1040@0.0.1536.824" timestamp="1606145654861" />
-    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096321" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601551297841" />
-    <state width="1493" height="388" key="GridCell.Tab.1.left" timestamp="1606145654861">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1314" height="319" key="GridCell.Tab.1.left/0.0.1536.824/-1920.12.1920.1040@-1920.12.1920.1040" timestamp="1605535613489" />
-    <state width="1493" height="388" key="GridCell.Tab.1.left/0.0.1536.824/-1920.12.1920.1040@0.0.1536.824" timestamp="1606145654861" />
-    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096321" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601551297841" />
-    <state width="1493" height="388" key="GridCell.Tab.1.right" timestamp="1606145654861">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1314" height="319" key="GridCell.Tab.1.right/0.0.1536.824/-1920.12.1920.1040@-1920.12.1920.1040" timestamp="1605535613490" />
-    <state width="1493" height="388" key="GridCell.Tab.1.right/0.0.1536.824/-1920.12.1920.1040@0.0.1536.824" timestamp="1606145654861" />
-    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600965096321" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601551297841" />
-    <state width="1314" height="319" key="GridCell.Tab.2.bottom" timestamp="1605535613490">
-      <screen x="-1920" y="12" width="1920" height="1040" />
-    </state>
-    <state width="1314" height="319" key="GridCell.Tab.2.bottom/0.0.1536.824/-1920.12.1920.1040@-1920.12.1920.1040" timestamp="1605535613490" />
-    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600954779292" />
-    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601466498827" />
-    <state width="1314" height="319" key="GridCell.Tab.2.center" timestamp="1605535613490">
-      <screen x="-1920" y="12" width="1920" height="1040" />
-    </state>
-    <state width="1314" height="319" key="GridCell.Tab.2.center/0.0.1536.824/-1920.12.1920.1040@-1920.12.1920.1040" timestamp="1605535613490" />
-    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600954779292" />
-    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601466498827" />
-    <state width="1314" height="319" key="GridCell.Tab.2.left" timestamp="1605535613490">
-      <screen x="-1920" y="12" width="1920" height="1040" />
-    </state>
-    <state width="1314" height="319" key="GridCell.Tab.2.left/0.0.1536.824/-1920.12.1920.1040@-1920.12.1920.1040" timestamp="1605535613490" />
-    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600954779292" />
-    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601466498827" />
-    <state width="1314" height="319" key="GridCell.Tab.2.right" timestamp="1605535613490">
-      <screen x="-1920" y="12" width="1920" height="1040" />
-    </state>
-    <state width="1314" height="319" key="GridCell.Tab.2.right/0.0.1536.824/-1920.12.1920.1040@-1920.12.1920.1040" timestamp="1605535613490" />
-    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600954779292" />
-    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601466498827" />
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1606135701811">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824/-1920.12.1920.1040@0.0.1536.824" timestamp="1606135701811" />
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600281606633" />
-    <state x="277" y="55" key="SettingsEditor" timestamp="1600104769037">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="277" y="55" key="SettingsEditor/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600104769037" />
-    <state x="-1339" y="310" key="com.intellij.ide.util.TipDialog" timestamp="1605541097371">
-      <screen x="-1920" y="12" width="1920" height="1040" />
-    </state>
-    <state x="-1339" y="310" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.12.1920.1040@-1920.12.1920.1040" timestamp="1605541097371" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600952792472" />
-    <state x="540" y="131" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1600191645849">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="540" y="131" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600191645849" />
-    <state x="209" y="114" key="new project wizard" timestamp="1601551295872">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="209" y="114" key="new project wizard/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600882597887" />
-    <state x="209" y="114" key="new project wizard/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601551295872" />
-    <state x="511" y="42" key="refactoring.ChangeSignatureDialog" timestamp="1600790955317">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="511" y="42" key="refactoring.ChangeSignatureDialog/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600790955317" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601469221179">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.84.1920.1040@0.0.1536.824" timestamp="1600935135997" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.125.1920.1040@0.0.1536.824" timestamp="1601469221179" />
+    <state x="2575" y="57" width="609" height="804" key="find.popup/0.0.1536.824/1920.-61.1920.1040@1920.-61.1920.1040" timestamp="1618157424413" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
