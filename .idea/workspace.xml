@@ -45,6 +45,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="keycloak-as-auth-server" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -206,10 +211,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2469" y="53" key="CommitChangelistDialog2" timestamp="1618158178577">
+    <state x="2469" y="53" key="CommitChangelistDialog2" timestamp="1618158282263">
       <screen x="1920" y="-61" width="1920" height="1040" />
     </state>
-    <state x="2469" y="53" key="CommitChangelistDialog2/0.0.1536.824/1920.-61.1920.1040@1920.-61.1920.1040" timestamp="1618158178577" />
+    <state x="2469" y="53" key="CommitChangelistDialog2/0.0.1536.824/1920.-61.1920.1040@1920.-61.1920.1040" timestamp="1618158282263" />
     <state x="2012" y="31" width="1736" height="856" key="DiffContextDialog" timestamp="1618158132809">
       <screen x="1920" y="-61" width="1920" height="1040" />
     </state>
